@@ -1,9 +1,78 @@
-# serverAPP
+Este es un servidor básico en Express, diseñado para ser un punto de partida para desarrollos más complejos.
 
-## Descripción
+## Requisitos
 
-Este repositorio contiene la programación backend de un servidor para un proyecto de e-commerce. Está desarrollado en JavaScript utilizando Node.js y Express para manejar las funcionalidades esenciales de una aplicación de comercio electrónico.
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/)
 
+## Instalación
+
+1. Clona el repositorio:
+   ```sh
+   git clone https://github.com/prados91/baseServer.git
+   cd baseServer
+   ```
+
+2. Instala las dependencias:
+   ```sh
+   npm install
+   ```
+
+## Uso
+
+Para iniciar el servidor en un entorno de desarrollo, ejecuta:
+```sh
+npm run dev
+```
+
+Para iniciar el servidor en un entorno de producción (o para utilizar mongoDB), ejecuta:
+```sh
+npm run prod
+```
+
+
+El servidor estará disponible en `http://localhost:8080` o `http://localhost:8081`.
+
+## Scripts
+
+- `npm run dev`: Inicia el servidor en modo de desarrollo con nodemon.
+- `npm run prod`: Inicia el servidor en modo de producción con nodemon.
+- `npm start`: Inicia el servidor en modo de producción.
+
+## Estructura del Proyecto
+
+```
+baseServer/
+├── node_modules/
+├── public/
+│   ├── assets/
+│   ├── scrips/
+│   ├── stlyes/
+│   └── index.html
+├── src/
+│   ├── config/
+│   ├── controllers/
+│   ├── data/
+│   ├── docs/
+│   ├── dto/
+│   ├── middlewares/
+│   ├── repositories/
+│   ├── routers/
+│   ├── services/
+│   ├── utils/
+│   └── views/
+├── test/
+│   ├── chai/
+│   ├── flow/
+│   ├── mocha/
+│   └── supertest/
+├── .gitignore
+├── package-lock.json
+├── package.json
+├── README.md
+├── server.js
+└── utils.js
+```
 ## Contenido del Repositorio
 
 - **public/**: Archivos estáticos servidos al cliente.
@@ -23,33 +92,7 @@ Este repositorio contiene la programación backend de un servidor para un proyec
 - **server.js**: Punto de entrada principal que inicia el servidor.
 - **utils.js**: Funciones utilitarias usadas en el servidor.
 
-## Instalación
+## Contribuciones
 
-Para instalar y ejecutar este proyecto en tu máquina local, sigue estos pasos:
-
-1. Clona el repositorio:
-    ```bash
-    git clone https://github.com/prados91/serverAPP.git
-    ```
-2. Navega al directorio del proyecto:
-    ```bash
-    cd serverAPP
-    ```
-3. Instala las dependencias:
-    ```bash
-    npm install
-    ```
-
-## Uso
-
-Para iniciar el servidor, ejecuta:
-```bash
-npm start
-```
-## Despliegue del servidor en railway.
-## Documentación del servidor.
-[Documentación](https://coderbasketstore.up.railway.app/api/docs)
-
-## Vistas
-[Front-End](https://coderbasketstore.netlify.app/)
+¡Las contribuciones son bienvenidas! Por favor, abre un issue o envía un pull request.
 
